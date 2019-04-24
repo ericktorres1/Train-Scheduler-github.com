@@ -1,0 +1,10 @@
+#title-train {
+    background: brown;
+    color: white;
+}
+
+#schedule, #addTrainText {
+    color: white;
+    background: lightblue; 
+}
+
