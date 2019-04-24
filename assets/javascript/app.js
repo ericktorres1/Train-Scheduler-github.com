@@ -39,7 +39,8 @@ database.ref().on('child_added', function(childSnap) {
     var timeRemainder = timeDiff % frequency;
 
     var minToTrain = frequency - timeRemainder;
+    console.log("Minutes to train" + minToTrain);
 
     var nextTrain = moment().add(minToTrain, "minutes").format("HH:mm");
-    $('#trainTable>tbody').append("<tr><td>" + trainName + "</td><td>" + destination + "</td></td>" + nextTrain + "</td><td>" + frequency + "</td><td>" + minToTrain + "</td></tr>");
+    $('#trainTable>tbody').append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextTrain + "</td><td>" + minToTrain + "</td></tr>");
 });
